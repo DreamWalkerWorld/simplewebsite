@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My | Photo Gallery</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h2>Photo<span>Gallery</span></h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to My Photo Gallery</h2>
+      <p>Explore a curated collection of stunning photography captured by John Doe, showcasing the beauty of nature, architecture, and more.</p>
+      <a href="#gallery" class="btn">View Gallery</a>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="deer.webp" alt="Deer" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="lily.webp" alt="lily" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="barracuda.webp" alt="barracuda" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="sunset.webp" alt="sunset" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="vietnam.webp" alt="vietnam" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="rotterdam.jpg" alt="rotterdam" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="dogs.webp" alt="Dogs" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="iceberg.webp" alt="iceberg" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="grebe.webp" alt="grebe" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="bird_kingfisher.webp" alt="Kingfisher" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="cat.webp" alt="Cat" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+          <img src="vulture.webp" alt="Vulture" onclick="openModal(this)">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for larger image view -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to inquire about purchasing prints or collaborating on a project, feel free to reach out!</p>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My |PhotoGallery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
